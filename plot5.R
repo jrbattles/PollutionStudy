@@ -18,7 +18,7 @@ colnames(MD.df) <- c('year', 'Emissions')
 # How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City? 
 
 # Generate the graph in the same directory as the source code
-png('plot5.png')
+png(filename='plot5.png')
 
 ggplot(data=MD.df, aes(x=year, y=Emissions)) + geom_bar(stat="identity") + guides(fill=F) + 
     ggtitle('Total Motor Vehicle Emissions - Baltimore, MD') + 
